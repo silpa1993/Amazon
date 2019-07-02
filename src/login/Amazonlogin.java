@@ -2,9 +2,10 @@ package login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.*;
 public class Amazonlogin {
-
-	public static void main(String[] arg) throws InterruptedException
+@Test
+	public static void login() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "C:/Users/SILPA/workspace/Mytest/Drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
